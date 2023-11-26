@@ -1,7 +1,21 @@
-body {
-    background-color: rgb(255, 255, 255);
+.divcard{
+    width: fit-content;
+    height: fit-content;
+}
+.contenedorcardsplanets{
+    display:flex;
+    overflow-x: auto;
+    width: auto;
+    min-height: 500px;
+    
+    white-space: nowrap;
 }
 
-h1 {
-    color: rgb(34, 31, 31);
+.contenedorcardscharacter{
+    display:flex;
+    overflow-x: auto;
+    width: auto;
+    min-height: 700px;
+    
+    white-space: nowrap;
 }
