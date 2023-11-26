@@ -1,29 +1,21 @@
-import React, { useContext } from "react";
-import "../../styles/home.css";
-import { CharacterCard } from "../component/charachterCard";
-import { PlanetCard } from "../component/planetCard";
+import React, { useState, useEffect, useContext } from "react";
 import { Context } from "../store/appContext";
+import { Planets } from "../component/planets";
+import { Starships } from "../component/starships";
+import { Characters } from "../component/characters";
+
+import "../../styles/home.css";
+
 export const Home = () => {
-  const { store, actions } = useContext(Context);
-
-  console.log(store);
-  return (
-    <div className="text-center mt-5 container">
-      <h1>Personajes</h1>
-      <div className="characterDiv">
-        <div className="d-flex overflow-scroll">
-          {store.characters.map((item, index) => {
-            return <CharacterCard character={item} id={index} />;
-          })}
-        </div>
-      </div>
-
-      <h1>Planetas</h1>
-      <div className="d-flex overflow-scroll">
-        {store.planet.map((item, index) => {
-          return <PlanetCard planet={item} id={index} />;
-        })}
-      </div>
-    </div>
-  );
-};
+	const { store } = useContext(Context);
+	return (
+	<div className="contenedor  col-md-10 mx-auto">
+		<h1 className="text-danger fw-bold my-3">Characters</h1>
+			<Characters/>
+		<h1 className="text-danger fw-bold my-3">Planets</h1>
+			<Planets/>
+		<h1 className="text-danger fw-bold my-3">Starships</h1>
+			<Starships/>
+	</div>
+);
+}
