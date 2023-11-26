@@ -1,5 +1,3 @@
-import { array } from "prop-types";
-
 const getState = ({ getStore, getActions, setStore }) => {
   return {
     store: {
