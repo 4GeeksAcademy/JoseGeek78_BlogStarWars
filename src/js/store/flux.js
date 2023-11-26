@@ -1,20 +1,43 @@
+import { array } from "prop-types";
+
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
+			characters: [],
+			planet: [],
+			
 			demo: [
 				{
 					title: "FIRST",
-					background: "white",
+					background: "black",
 					initial: "white"
 				},
 				{
 					title: "SECOND",
-					background: "white",
+					background: "black",
 					initial: "white"
 				}
 			]
 		},
 		actions: {
+			characterApi: () => {
+			  fetch("https://swapi.dev/api/people")
+				.then(res => res.json())
+				.then(data => {
+				  console.log(data);
+				  setStore({ characters: data.results });
+				});
+			},
+			planetApi: () => {
+			  fetch("https://swapi.dev/api/planets")
+				.then(res => res.json())
+				.then(data => {
+				  console.log(data);
+				  setStore({ planet: data.results });
+				})
+			},
+		  },
+		  
 			// Use getActions to call a function within a fuction
 			exampleFunction: () => {
 				getActions().changeColor(0, "green");
@@ -40,6 +63,5 @@ const getState = ({ getStore, getActions, setStore }) => {
 			}
 		}
 	};
-};
 
 export default getState;
