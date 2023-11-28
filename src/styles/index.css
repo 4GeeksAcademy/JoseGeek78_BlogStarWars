@@ -1,63 +1,58 @@
-/* 
-    General Styles
-*/
-.card{
-    width:350px;
-    height: 370px;
+.card {
+  width: 350px;
+  height: 370px;
 }
-.cardcharacter{
-    width:350px;
-    height: 450px;
+.cardcharacter {
+  width: 350px;
+  height: 450px;
 }
-.imagenCard{
-    width:350px;
-    height:180px;
-    background-color: gainsboro;
+.imagenCard {
+  width: 350px;
+  height: 180px;
+  background-color: gainsboro;
 }
-.card-body{
-    width:350px;
-    height:190px;
+.card-body {
+  width: 350px;
+  height: 190px;
 }
 
-.card-bodycharacter{
-    width:350px;
-    height:220px;
+.card-bodycharacter {
+  width: 350px;
+  height: 220px;
 }
-.blogo{
-    border:0px;
-    width:fit-content;
-    
+.blogo {
+  border: 0px;
+  width: fit-content;
 }
-.logostarwars{
-    width:10%;
-   
+.logostarwars {
+  width: 10%;
 }
 
-.imgcard{
-    margin-top:70px;
+.imgcard {
+  margin-top: 70px;
 }
 
-.desciption{
-text-wrap: wrap;
+.desciption {
+  text-wrap: wrap;
 }
-.Blearn{
-    border-radius: 5px;
-    border:1px solid rgba(0, 89, 255, 0.925);
-    align-items: center;
+.Blearn {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 89, 255, 0.925);
+  align-items: center;
 }
-.Blearn:active{
-    background-color: rgba(0, 89, 255, 0.925);
-    opacity: 0.7;
+.Blearn:active {
+  background-color: rgba(0, 89, 255, 0.925);
+  opacity: 0.7;
 }
 
-.Bheart{
-    width:50px;
-    border-radius: 4px;
-    border:1px solid rgba(255, 170, 0, 0.925);
-    color:rgba(255, 170, 0, 0.925);
-    align-items: center;
+.Bheart {
+  width: 50px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 170, 0, 0.925);
+  color: rgba(255, 170, 0, 0.925);
+  align-items: center;
 }
-.Bheart:active{
-    background-color:rgba(255, 170, 0, 0.925) ;
-    opacity: 0.7;
+.Bheart:active {
+  background-color: rgba(255, 170, 0, 0.925);
+  opacity: 0.7;
 }
